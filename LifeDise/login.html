@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeDise | Login</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" required placeholder="Name"/>
+      <input type="email" required placeholder="Email Address"/>
+      <input type="password" id="firstSecPass" required placeholder="Password"/>
+      <input type="password" id="ConfirmSecPass" required placeholder="Confirm Password"/>
+      <button onclick="Validate()">create</button>
+      <p class="message">Already registered? <a href="#">Login Here</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" required id="user" placeholder="Username"/>
+      <input type="password" required id="pass" placeholder="Password"/>
+      <button onclick="checkPassword()">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+<script>
+  $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+
+  function checkPassword(){
+      var p = document.getElementById("pass").value; 
+      var u = document.getElementById("user").value; 
+      var s=0;
+      if(u=="abc" && p=="123"){
+          window.open('index.html');
+      }
+      else{
+        alert("Incorrect password");
+      }
+  }
+  function Validate() {
+    var SecPass = document.getElementById("firstSecPass").value;
+    var confirmSecPass = document.getElementById("ConfirmSecPass").value;
+    if (SecPass != confirmSecPass) {
+        alert("You Passwords do not match. Please enter same password in both");
+        return false;
+    }
+    else{
+      document.write("Congratulations! You have successfully created your account :)");
+      window.open('index.html');
+      return true;
+    }
+  }
+
+</script>
+</body>
+</html>

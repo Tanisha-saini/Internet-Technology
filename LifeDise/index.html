@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>LifeDise</title>
+</head>
+<body>
+   <div class="header1">
+    <h5 class="topbar" >
+        <a href="aboutus.html">About |</a>
+        <a href="contact.html">Contact</a>
+    </h5>
+
+    <h5 class="topbar right">
+        <a href="login.html" >Login</a>
+    </h5>
+
+    <h1 id="sitename">LifeDise</h1>
+    <h4 id="tagline">Read. Learn. Explore. Shop.</h4>
+
+    <div class="search">
+        <input type="text" id="myInput"  class="searchTerm" onkeyup="myFunction()" placeholder="What are you looking for?">
+        <button type="submit" class="searchButton" onclick="myFunction()">
+          <i class="fa fa-search"></i>
+       </button>
+    </div>
+    <ul id="myUL" style="display: none;">
+        <li><a href="breakfast.html">poha</a></li>
+        <li><a href="breakfast.html" >breakfast</a></li>
+        
+        <li><a href="dinner.html">dinner</a></li>
+        <li><a href="europe.html">europe</a></li>
+        
+        <li><a href="travel.html">travel</a></li>
+        <li><a href="reccomendedforyouarticle.html">reccomendation</a></li>
+        <li><a href="trenchcoat.html">coat</a></li>
+        <li><a href="tops.html">tshirt</a></li>
+        <li><a href="homedecor.html">bathroom</a></li>
+        <li><a href="homedecor.html">kitchen</a></li>
+        <li><a href="CultureNew.html">dance</a></li>
+        <li><a href="Artarticle.html">art</a></li>
+        <li><a href="travel.html">place</a></li>
+    </ul>
+ 
+    <div class="navbar" id="mynav">
+        <a href="food.html">Food</a> 
+        <a href="travel.html">Travel</a> 
+        <a href="CultureNew.html">Culture and Art</a> 
+        <a href="homedecor.html">Home decor</a> 
+        <a href="thrift.html">Thrift Store</a>
+    </div>
+   </div>
+    <div class="cards">
+        <div class="column1" onclick="location.href='homedecor.html'">
+            <h1>Home decor</h1>
+        </div>
+        <div class="column2" onclick="location.href='CultureNew.html'">
+            <h1>Culture and Art</h1>
+        </div>
+        <div class="column3" onclick="location.href='food.html'">
+            <h1>Food</h1>
+        </div>
+        <div class="column4" onclick="location.href='travel.html'">
+            <h1>Travel</h1>
+        </div>
+        <div class="column5" onclick="location.href='thrift.html'">
+            <h1>Thrift Store</h1>
+        </div>
+    </div>
+    
+    <h1 id="delight">
+        PRODUCTS WE DELIGHT
+    </h1>
+
+    
+    <ul id="autoWidth" class="cs-hidden">
+
+        <li class="item-a">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="images/Image1.jpg" alt="1">
+        
+                    <div class = "overlay" onclick="location.href='redsuit.html'">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="redsuit.html">RED SUIT</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$150</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-b">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="images/image2.jpg" alt="2">
+        
+                    <div class = "overlay" onclick="location.href='peachsweater.html'">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="peachsweater.html">PEACH SWEATER</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$32</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-c">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="images/image3.jpg" alt="3">
+        
+                    <div class = "overlay" onclick="location.href='trenchcoat.html'">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="trenchcoat.html">TRENCH COAT</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$100</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-d">
+            <div class="box">
+                <div class = "slide-img" >
+                    <img src="images/image4.jpg" alt="4">
+        
+                    <div class = "overlay">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="product.html">BUCKET HAT</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$30</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-e">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="images/image5.jpg" alt="5">
+        
+                    <div class = "overlay">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="product.html">WHITE FORMALS</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$340</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-f">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="images/image6.jpg" alt="6">
+        
+                    <div class = "overlay">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="product.html">LONG BLACK COAT</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$200</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-g">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="images/image7.jpg" alt="7">
+        
+                    <div class = "overlay">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="product.html">FLORAL DENIM TOP</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$20</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-h">
+            <div class="box">
+                <div class = "slide-img">
+                    <img src="images/image8.jpg" alt="8">
+        
+                    <div class = "overlay">
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                
+                <div class = "detail-box">
+                    <div class="type">
+                        <a href="product.html">BLACK HOODIES</a>
+                        <span>New Arrival</span>
+                    </div>
+                    <a href="#" class="price>">$15</a>
+                </div>
+            </div>
+        </li>
+        
+      </ul>
+
+<div class="bigPic">
+  <p id="textOnB">Fill your life with<br> adventures, not with things;<br>Have stories to tell<br> not stuff to show!</p>
+   <div id="rd">
+  <a href="travel.html"><button class="RdMore">READ MORE</button></a>
+</div>
+       
+<h2 id="exptitle">Expert Q & A's</h2>
+<div class="horizontal">
+ <div class="holdingcont">
+  <div class="internalcontB">
+   <img src="https://media.istockphoto.com/photos/top-view-table-full-of-food-picture-id1220017909?b=1&k=20&m=1220017909&s=170667a&w=0&h=Kjdsgm1tUOVBDuP060hGA9kR_OHNr7_4HfnCFrdkmhw=" id="i2">
+    <h3 id="topics">FOOD</h3>
+    <a href="foodarticle.html" class="Anslinks">What are the bare minimum fat intake <br>requirements for survival?</a> 
+  </div>
+
+  <div class="internalcontC">
+   <img src="https://www.royservicecenter.com/rc/interior-decoration/wp-content/uploads/sites/5/2019/08/interior_design_01.jpg" id="i3">
+    <h3 id="topics">HOME DECOR</h3>
+    <a href="homedecorarticle.html" class="Anslinks">What is the difference between interior <br>architecture ,interior space and interior <br>design?</a>
+  </div>
+
+  <div class="internalcontD">
+   <img src="https://www.researchgate.net/publication/343512175/figure/fig2/AS:921944417390592@1596820086745/Sawdust-Wall-Panels_Q320.jpg" id="i4">
+    <h3 id="topics">HOME DECOR</h3>
+    <a href="homedecorarticle.html" class="Anslinks">Sawdust as a sound proof in interior<br> design?</a>
+  </div>
+
+  <div class="internalcontE">
+   <img src="https://www.bellevuelifespring.org/wp-content/uploads/2018/06/Thrift-Culture-Storefront2.jpg" id="i5">
+     <h3 id="topics">THRIFT STORE</h3>
+    <a href="thrift.html" class="Anslinks">I live in a small town will I find good stuff<br> at thrift store?</a>
+  </div>
+
+  <div class="internalcontF">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlU0olJrA0ZoyQtZGlLgr15yGkXXDJLdX1nQ&usqp=CAU" id="i6">
+  <h3 id="topics">THRIFT STORE</h3>
+    <a href="thrift.html" class="Anslinks">Are there any thrift store shopping<br> dont's?</a>
+   </div>
+
+  </div>
+ </div>
+
+<!--blog part after search-->
+<section class="blog container">
+    <div clas= "row">
+        <div class ="post col-lg-8 col-md-8 col-12">
+            <div class="post1">
+                <img class ="img-fluid" sre="zew/foodpage.jpg">
+            </div>
+        </div>
+           <div class ="sidebar col-lg-8 col-md-8 col-12">
+            </div>
+    </div>
+</section>
+
+<!----blog part ends-->
+
+    <!---footer starts-->
+      <div class="footer-container">
+          <div class="footer">
+              <div class="footer-heading footer-1">
+                  <h2>About us</h2>
+                  <a href="#">Blog</a>
+                  
+                  <a href="#">customers</a>
+                 
+                  <a href="#">terms of service</a>
+                  
+              </div>
+              
+            <div class="footer-heading footer-3">
+                <h2>Follow us on</h2>
+                <a href="#" class="fa fa-facebook   ">  Facebook</a>  
+                <a href="#" class="fa fa-instagram   "> instagram</a>
+                <a href="#" class="fa fa-twitter  ">    Twitter</a>
+                <a href="#" class="fa fa-pinterest ">   pinterest</a>  
+                <a href="#" class="fa fa-linkedin  ">   linkedin</a>  
+                <a href="#" class="fa fa-youtube  ">    youtube</a>  
+                <a href="#" class="fa fa-google   ">    google</a>  
+                
+            </div>
+            <form class="footer-email-form">
+                <h3>Join our newsletter</h3>
+                <input type="email" required placeholder="enter your email address" id="footer-email">
+                <input type="Submit" onclick="successfull()" value="Signup" id="footer-email-btn">
+            </form>
+          </div>
+      </div>
+      <script>
+          function successfull(){
+              var eml=document.getElementById("footer-email");
+              var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+              if(eml.value.match(mailformat)){
+                window.open('successfullpage.html');
+              }
+              else{
+                alert('Invalid email address');
+              }
+          }
+          function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+
+            const inputDisplay = input.value.length >= 1 ? 'block' : 'none';
+            ul.style.display = inputDisplay;
+            
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+      </script>
+
+    <!----footer end-->
+    
+</body>
+</html>

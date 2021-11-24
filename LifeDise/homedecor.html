@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="homedecor.css">
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+    <title>LifeDise | Homedecor</title>
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="header" class="shadow bg-light">
+  <nav class="container navbar">
+      <a href="homedecor.html" class="nav-brand text-dark">
+          Home Decor
+      </a>
+
+      <!-- toggle button -->
+      <button class="toggle-button">
+          <span><i class="fas fa-bars"></i></span>
+      </button>
+
+      <!-- collapse on toggle button click -->
+      <div class="collapse">
+          <ul class="navbar-nav">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="#site-main" class="nav-link">Blog</a>
+              <a href="#posts" class="nav-link">Pages</a>
+              <a href="#diy" class="nav-link">Categories</a>
+              <a href="aboutus.html" class="nav-link">About</a>
+              <a href="contact.html" class="nav-link">Contact</a>
+          </ul>
+      </div>
+
+      <!-- collapse on toggle button click -->
+      <div class="collapse">
+          <ul class="navbar-nav">
+              <div class="search-box">
+                  <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+              </div>
+              <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+          </ul>
+      </div>
+  </nav>
+
+</header>
+<!-- End of Header -->
+
+
+<script type="text/javascript">
+    var arr = [];
+    arr[0]= new Image();
+    arr[0].src= "https://media.istockphoto.com/photos/posters-in-cozy-apartment-interior-picture-id943910360?k=20&m=943910360&s=612x612&w=0&h=nkX_Nr3FPR4qv79rvmqmBKn9qVzusmlHArtrenIzda0=";
+
+    arr[1]= new Image();
+    arr[1].src = "https://www.couponraja.in/theroyale/wp-content/uploads/2017/06/How-to-decorate-your-home-631x480.jpg";
+
+    arr[2]= new Image();
+    arr[2].src = "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJvb20lMjBkZWNvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80";
+
+    var i=0;
+
+    function slide(){
+        document.getElementById("image1").src= arr[i].src;
+        i++;
+        if(i==arr.length){ 
+            i=0;
+        }
+        setTimeout(function(){ slide(); },2000);
+    }
+</script>
+
+<body onLoad="slide('image1',arr);">
+    <div id="img">
+    <img id="image1" height="400px" width="100%" />
+</div>
+
+    
+
+<!-- Across the home  -->
+<h1 class="title2" style="padding-left:50px;">Across the home</h1>
+
+<div class="cards">
+    <div class="column1" onclick="location.href='kitchen.html'">
+        <h2 >Living room</h2>
+    </div>
+    <div class="column2" onclick="location.href='kitchen.html'">
+        <h2>Kitchen</h2>
+    </div>
+    <div class="column3" onclick="location.href='kitchen.html'">
+        <h2>Bathroom</h2>
+    </div>
+    <div class="column4" onclick="location.href='kitchen.html'">
+        <h2>Bedroom</h2>
+    </div>
+</div>
+<!-- End of Across the home  -->
+
+<div class="photoo">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <h1>The Best Budget Decorating Blogs for<br> all your Interior Needs</h1>
+                <p>Whether you’re in the market for a major interior overhaul or you’re simply looking to give your home a quick and easy update, chances are you've spent some time online hun...</p>
+                <a href="homedecorarticle.html" class="btn" >Explore more</a>
+            </div>
+            <div class="col-2">
+                <img src="https://www.thespruce.com/thmb/8sIQjQLsgQVy-Qj6Y0UkCPst20U=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Old_Brand_New-5b6096764cedfd00504f9239.jpg">
+            </div>
+        </div>
+    </div>  
+</div>
+
+<!-- DIY  -->
+<h1 id="diy" class="title2" style="padding-left:50px;">DIY Do it Yourself</h1>
+
+<div class="cards">
+    <div class="column5" onclick="location.href='diy.html'">
+        <h2 >For room</h2>
+    </div>
+    <div class="column6" onclick="location.href='diy.html'">
+        <h2>Furniture</h2>
+    </div>
+    <div class="column7" onclick="location.href='diy.html'">
+        <h2>Balcony</h2>
+    </div>
+    <div class="column8" onclick="location.href='diy.html'">
+        <h2>Refrigerator</h2>
+    </div>
+</div>
+<!--End of DIY  -->
+<h2 class="title2">Blogs</h1>
+<!-- Main Site -->
+<main id="site-main">
+
+    <!-- Blog Post Section -->
+    <section id="posts">
+        <div class="container">
+            <div class="grid">
+
+                <!-- article -->
+                    <div class="grid-item" onclick="location.href='foodarticle.html'">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow-img">
+                                    <a href="#">
+                                        <img src="https://www.rentomojo.com/blog/wp-content/uploads/2019/07/Statement.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body text-center px-1">
+                                    <a href="#" class="text-title display-1 text-dark">
+                                        Looking for some feedback for this rejected track
+                                        technology
+                                    </a>
+                                    <p class="secondary-title text-secondary display-3">
+                                        <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                        <span><i class="far fa-comments text-primary"></i> 12</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                <!-- .article -->
+
+                <!-- article -->
+                    <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://decoholic.org/wp-content/uploads/2020/12/cozy-fresh-living-room-idea.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://okl.scene7.com/is/image/OKL/LEAD_POWEROFPAIRS_0318?wid=1000&op_sharpen=1" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://www.mydomaine.com/thmb/GoYv7OQIkJWvA9o72R8g6mBcOV8=/1548x1554/filters:fill(auto,1)/studioashby-669936b3500f4d29bc1999c85c29aa54.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://imgmedia.lbb.in/media/2019/02/5c6ec1279d684b2e0de71737_1550762279676.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9tZSUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://images.pexels.com/photos/1099816/pexels-photo-1099816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                <!-- article -->
+                <div class="grid-item" onclick="location.href='foodarticle.html'">
+                    <article class="article">
+                        <div class="card">
+                            <div class="overflow-img">
+                                <a href="#">
+                                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/home-decor-1591127768.jpg?crop=0.502xw:1.00xh;0.498xw,0&resize=640:*" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="card-body text-center px-1">
+                                <a href="#" class="text-title display-1 text-dark">
+                                    Looking for some feedback for this rejected track
+                                    technology
+                                </a>
+                                <p class="secondary-title text-secondary display-3">
+                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021</span>
+                                    <span><i class="far fa-comments text-primary"></i> 12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- .article -->
+                
+                
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary secondary-title text-light">Load More Posts...</button>
+            </div>
+        </div>
+    </section>
+<!-- .Blog Post Section -->
+
+</main>
+
+<!-- Style it up -->
+
+<h1 class="title2" style="padding-left:50px;">Let's Style it Up</h1>
+
+
+
+<div class="cards">
+    <div class="column9" >
+        <h2>Vases</h2>
+    </div>
+    <div class="column10 " >
+        <h2>Wall Accents</h2>
+    </div>
+    <div class="column11" >
+        <h2>Clocks</h2>
+    </div>
+    <div class="column12" >
+        <h2>Paintings</h2>
+    </div>
+</div>
+
+<!-- End of style it up  -->
+    
+<!---footer starts-->
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2>About us</h2>
+            <a href="#">Blog</a>
+            <a href="#">customers</a>
+            <a href="#">terms of service</a>
+        </div>
+      
+        <div class="footer-heading footer-3">
+            <h2>Follow us on</h2>
+            <a href="#" class="fa fa-facebook   ">  Facebook</a>  
+            <a href="#" class="fa fa-instagram   "> instagram</a>
+            <a href="#" class="fa fa-twitter  ">    Twitter</a>
+            <a href="#" class="fa fa-pinterest ">   pinterest</a>  
+            <a href="#" class="fa fa-linkedin  ">   linkedin</a>  
+            <a href="#" class="fa fa-youtube  ">    youtube</a>  
+            <a href="#" class="fa fa-google   ">    google</a>  
+            
+        </div>
+        <div class="footer-email-form">
+            <h3>Join our newsletter</h3>
+            <input type="email" placeholder="enter your email address" id="footer-email">
+            <input type="Submit" value="Signup" id="footer-email-btn">
+        </div>
+  </div>
+</div>
+
+<!----footer end-->
+
+ <!-- masonry libray for horizontal grid -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+
+ <!-- swiper slider cdn -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
+
+ <!-- custom javascript main.js file -->
+ <script src="main4.js"></script>
+
+ 
+
+</body>
+</html>
