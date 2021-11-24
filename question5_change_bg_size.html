@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+
+    <style>
+        #heading{
+            font-weight:bold;
+            background-color:lightgreen;
+            border-radius: 1px;
+            margin: 0px;
+        }
+        #para{
+            margin: 2px 0px 0px 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2 id="heading">Lorem Ipsum</h2>   
+  
+    <p id ="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et lacus ac augue malesuada tristique.
+         Donec eget ipsum quis lectus fermentum luctus id et lorem. Morbi vitae elit sit amet eros rutrum lacinia et sit 
+         amet eros. Quisque fermentum, ipsum ut bibendum tempus, metus sapien faucibus metus, lacinia venenatis ante eros 
+         sit amet diam. 
+    </p>
+   
+    <script>
+        function changeColor(){
+            document.getElementById("heading").style.backgroundColor="red";
+        }
+
+        function changeFontSize(b){
+            console.log(b);
+            document.getElementById("para").style.fontSize=b+"px";
+        }
+        
+        var a=prompt("Do you wish to change the background color of heading?");
+        var b=prompt("Enter the font size you want to set:");
+
+        if(a=="yes")
+            changeColor();
+        
+        changeFontSize(b);
+
+    </script>
+
+</body>
+</html>

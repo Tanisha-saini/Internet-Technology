@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    <p style="font-size:30px;" >Question 6) Click on the image to change.</p>
+    <p>
+        <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_f-3Npwnj40B6u8O8WmcX8swxRqUS8ncQg&usqp=CAU.jpg" 
+            style="height: 250px; width: 300px; padding-left: 40%;" id="changeimageonclick" onclick="changeImage()"  >
+    </p>
+    <script>
+        function changeImage() {
+            if (document.getElementById("changeimageonclick").src == "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_f-3Npwnj40B6u8O8WmcX8swxRqUS8ncQg&usqp=CAU.jpg") {
+                document.getElementById("changeimageonclick").src = "https://4.imimg.com/data4/UB/WV/MY-32247465/fresh-red-apple-500x500.jpg";
+            }
+            else{
+                document.getElementById("changeimageonclick").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_f-3Npwnj40B6u8O8WmcX8swxRqUS8ncQg&usqp=CAU.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

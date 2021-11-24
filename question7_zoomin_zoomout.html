@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7</title>
+</head>
+<body>
+    <p style="font-size:30px;" >Question 7) Zoom in on mouse enter and zoom out on mouseout</p>
+
+    <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_f-3Npwnj40B6u8O8WmcX8swxRqUS8ncQg&usqp=CAU.jpg" 
+    style="height: 250px; width: 300px;" id="changeimageonclick" onmouseenter="zoomin()" onmouseout="zoomout()">
+    <script>
+         function zoomin() {
+            var x = document.getElementById("changeimageonclick");
+            var currWidth = x.clientWidth;
+                x.style.width = (currWidth + 100) + "px";
+            var currHeight = x.clientHeight;
+                x.style.height = (currHeight + 50) + "px";
+        }
+        function zoomout() {
+            var y = document.getElementById("changeimageonclick");
+            var currWidth = y.clientWidth;
+                y.style.width = (currWidth - 100) + "px";
+            var currHeight = y.clientHeight;
+                y.style.height = (currHeight - 50) + "px";
+        }
+    </script>
+</body>
+</html>

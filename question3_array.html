@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<script>
+    function bubbleSort(array) {
+        var done = false;
+        while (!done) {
+            done = true;
+            for (var i = 1; i < array.length; i += 1) {
+                if (array[i - 1] > array[i]) {
+                done = false;
+                var tmp = array[i - 1];
+                array[i - 1] = array[i];
+                array[i] = tmp;
+                }
+            }
+        }
+        return array;
+    }
+
+    var numbers=[];
+    var n=prompt("Total number of elements you want to insert?");
+    for(var i=0;i<n;i++){
+        var x=prompt("Enter a number: ");
+        numbers.push(x);
+    }
+    
+    document.write("Array before sorting: ");
+    for(var i=0;i<n;i++){
+        document.write(numbers[i]+" ");
+    }
+
+    bubbleSort(numbers);
+    
+    document.write("<br>Array after sorting: ");
+    for(var i=0;i<n;i++){
+        document.write(numbers[i]+" ");
+    }
+
+</script>
+<body>
+    
+</body>
+</html>

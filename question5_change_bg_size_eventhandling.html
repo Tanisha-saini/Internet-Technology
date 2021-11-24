@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+
+    <style>
+        #heading{
+            font-size:40px;
+            font-weight:bold;
+            background-color:lightgreen;
+            border-radius: 1px;
+            margin:200px 0px;
+            width: 100%;
+        }
+        #para{
+            font-size: 20px;
+            margin: 10px 0px 0px 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <a id="heading" href="#" onclick="changeColor()">Lorem Ipsum</a>
+    <br>
+    <a id="para" href="#" onmouseover="changeFontSize()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur doloremque aut consectetur esse cum, veniam fugit, nisi sed cupiditate libero quibusdam impedit neque voluptates fugiat, voluptatum saepe aliquid praesentium.</a>
+   
+    <script>
+        function changeColor(){
+            document.getElementById("heading").style.backgroundColor="red";
+        }
+
+        function changeFontSize(){
+            document.getElementById("para").style.fontSize="30px";
+        }
+    </script>
+
+</body>
+</html>

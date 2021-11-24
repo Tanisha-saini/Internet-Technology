@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing Stack</title>
+    <script>
+        class Stack {
+            constructor() {
+                this.data = [];
+                this.top = 0;
+            }
+
+            push(element) {
+                this.data[this.top] = element;
+                this.top = this.top + 1;
+            }
+
+            isEmpty() {
+                return this.top === 0;
+            }
+
+            pop() {
+                if( this.isEmpty() === false ) {
+                    this.top = this.top -1;
+                    return this.data.pop(); 
+                }
+            }
+
+            print() {
+                var top = this.top - 1;                            
+                while(top >= 0){                                   
+                    document.write((this.data[top]));
+                    top--;
+                }
+            }                
+        }
+
+        let stack = new Stack();        
+
+        var n=prompt("How many elements you want to insert ?");
+        for(var i=0;i<n;i++){
+            var x=prompt("Enter a number: ");
+            stack.push(x);
+        }
+
+        document.write("Stack after push: ");
+        stack.print();
+
+        var n2=prompt("How many elements you want to delete? ");
+        for(var i=0;i<n2;i++){
+            stack.pop();
+        }
+        // document.write("\n");
+        document.writeln("<br>Stack after pop: ");
+        stack.print();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>practice ques 9 Store JSON data from JSON file</title>
+
+    <style>
+      .student-info{
+        position: absolute;
+        left: 300px;
+        top: 100px;
+        background-color: rgb(116, 235, 209);
+        height: 200px;
+        padding: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="student">
+      <div class="student-info">
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $.getJSON("question9_storejson.json",function(result){
+        $.each(result, function(attr, val){
+          $(".student-info").append(attr + ":" + val + " ");
+        });
+      });
+    </script>
+  </body>
+</html>
